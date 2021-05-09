@@ -18,10 +18,6 @@ public class DijkstraGraph {
     start = -1;
   }
 
-  public Vertex getVertex(int number) {
-    return vertices[number];
-  }
-
   public void fixStart(int start) {
     vertices = new Vertex[distanceMatrix.length];
     for (int i = 0; i < vertices.length; i++) {
