@@ -1,9 +1,4 @@
-package by.pavka;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+package by.anastacia.dijkstra;
 
 public class Vertex {
   public static int MAX = Integer.MAX_VALUE;

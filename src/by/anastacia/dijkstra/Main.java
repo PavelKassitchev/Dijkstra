@@ -1,8 +1,8 @@
-package by.pavka;
+package by.anastacia.dijkstra;
 
 import java.util.List;
 
-import static by.pavka.Vertex.MAX;
+import static by.anastacia.dijkstra.Vertex.MAX;
 
 public class Main {
 
@@ -18,8 +18,8 @@ public class Main {
       {MAX, MAX, MAX, MAX, MAX, MAX, 0}
     };
     DijkstraGraph dijkstraGraph = new DijkstraGraph(vertices);
-    dijkstraGraph.fixStart(0);
-    List<Vertex> path = dijkstraGraph.getPathForward(6);
+    dijkstraGraph.setMarks(0);
+    List<Vertex> path = dijkstraGraph.getPathForward(5);
     showPath(path);
   }
 
