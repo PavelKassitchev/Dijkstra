@@ -35,7 +35,6 @@ public class DijkstraGraph {
     do {
       int[] distances = distanceMatrix[current.getId()];
       for (int i = 0; i < distances.length; i++) {
-        System.out.println("Vertex " + current.getId() + " distance " + distances[i]);
         if (i != current.getId() && distances[i] != Vertex.MAX && vertices[i].getConstantMark() == Vertex.MAX) {
           vertexQueue.remove(vertices[i]);
           vertices[i].checkPredecessor(current, distances[i]);
@@ -44,8 +43,6 @@ public class DijkstraGraph {
       }
       current = vertexQueue.poll();
       if (current != null) {
-        System.out.println("POLLED " + current.getId() + ", MARK " + current.getTempMark() + ", PREDECESSOR " +
-                current.getTempPredecessor().getId());
         currentMark = current.getTempMark();
         current.setConstantMark(currentMark);
         current.setBestPredecessor(current.getTempPredecessor());

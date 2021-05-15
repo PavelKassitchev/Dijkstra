@@ -9,12 +9,12 @@ public class Main {
   public static void main(String[] args) {
 
     int[][] vertices = {
-      {0, 4, 1, MAX, 2, MAX, MAX},
-      {MAX, 0, MAX, 3, MAX, MAX, 2},
-      {MAX, 6, 0, 5, 3, MAX, MAX},
-      {MAX, 2, MAX, 0, MAX, 5, 4},
-      {MAX, MAX, 4, MAX, 0, 4, MAX},
-      {MAX, MAX, MAX, MAX, MAX, 0, 6},
+      {0, 1, MAX, 5, 2, MAX, MAX},
+      {MAX, 0, 1, MAX, MAX, MAX, MAX},
+      {MAX, MAX, 0, MAX, 1, MAX, 4},
+      {MAX, 1, 1, 0, MAX, 4, 8},
+      {MAX, MAX, MAX, MAX, 0, 9, MAX},
+      {MAX, MAX, MAX, MAX, MAX, 0, 4},
       {MAX, MAX, MAX, MAX, MAX, MAX, 0}
     };
     DijkstraGraph dijkstraGraph = new DijkstraGraph(vertices);
